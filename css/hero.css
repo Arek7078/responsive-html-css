@@ -65,7 +65,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  max-width: 1920px;
+  max-width: 1536px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   margin: auto;
@@ -116,7 +116,7 @@ header {
 /*main*/
 .main_content {
   background-color: #e0e0e0;
-  max-width: 1920px;
+  max-width: 1536px;
   margin: auto;
 }
 /*burger menu active*/
@@ -158,7 +158,7 @@ header {
 
 /* Hero section styles */
 .hero_section {
-  max-width: 1920px;
+  max-width: 1536px;;
   height: 100vh;
   margin: auto;
   display: flex;
@@ -167,7 +167,7 @@ header {
   flex-direction: column;
   text-align: center;
   padding: 2rem;
-  background-image: url("../img/background_large.jpg");
+  background-image: url("../img/bghero_small.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,7 +188,7 @@ header {
 .about_section,
 .services_section,
 .contact_section {
-  max-width: 1920px;
+  max-width: 100%;
   min-height: 100vh;
   margin: auto;
   padding: 4rem;
@@ -216,7 +216,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 .description_container {
   width: 300px;
@@ -238,8 +238,8 @@ header {
 .cardio,
 .strenght,
 .diet {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   padding: 1rem;
   border-radius: 10%;
   background-image: url("../img/serv_1.png");
@@ -253,7 +253,7 @@ header {
 
 /* Footer styles */
 footer {
-  max-width: 1920px;
+  max-width: 1536px;
   margin: auto;
   text-align: center;
   padding: 1rem;
@@ -268,29 +268,29 @@ footer {
   .burger_menu {
     display: none;
   }
-  .about_section,
-  .services_section,
-  .contact_section {
-    padding: 0;
-  }
 }
 @media screen and (min-width: 692px) {
+  .hero_section{
+    background-image: url('../img/bghero_medium.jpg');
+  }
   .section_container {
     justify-content: space-evenly;
     flex-wrap: nowrap;
   }
-  .about_img {
-    width: 300px;
-    height: 300px;
-  }
-  .cardio,
+  
+  .about_img,
+   .cardio,
   .strenght,
   .diet {
-    width: 250px;
-    height: 250px;
-  }
+    width: 300px;
+    height: 300px;
+  
+}
 }
 @media screen and (min-width: 1080px) {
+  .hero_section{
+    background-image: url('../img/bghero_large.jpg');
+  }
   .hero_button:hover {
     background-color: #e0e0e0;
     transform: scale(1.05);
@@ -307,16 +307,14 @@ footer {
   .hero_description {
     animation: text_animation 1.5s ease-in-out;
   }
-  .about_img {
-    width: 400px;
-    height: 400px;
-  }
+  
+  .about_img,
   .cardio,
   .strenght,
   .diet {
     width: 400px;
     height: 400px;
-  }
+   } 
   .cardio:hover,
   .strenght:hover,
   .diet:hover {
