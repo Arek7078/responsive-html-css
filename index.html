@@ -48,7 +48,7 @@
         <a href="#about" class="hero_button">Dowiedz się więcej</a>
       </section>
 
-      <section class="about_section" id="about">
+      <section class="about_container" id="about">
         <h2 class="section_title">O nas</h2>
         <div class="section_container">
           <img src="./img/ab_1.png" alt="img" class="about_img" />
@@ -69,7 +69,7 @@
         </div>
       </section>
 
-      <section class="services_section" id="services">
+      <section class="services_container" id="services">
         <h2 class="section_title">Usługi</h2>
         <div class="section_container">
           <div class="cardio">
@@ -84,12 +84,36 @@
         </div>
       </section>
 
-      <section class="contact_section" id="contact">
+      <section class="contact_container" id="contact">
         <h2 class="section_title">Kontakt</h2>
         <p class="section_description">
           Skontaktuj się z nami, aby uzyskać więcej informacji o naszych
           usługach.
         </p>
+        <form class="contact_form" action="#" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Imię i nazwisko"
+            required
+            class="contact_input"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Adres e-mail"
+            required
+            class="contact_input"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Wiadomość"
+            required
+            class="contact_textarea"
+          ></textarea>
+          <button type="submit" class="contact_button">Wyślij</button>
+        </form>
       </section>
     </main>
 
