@@ -159,7 +159,7 @@ header {
 /* Hero section styles */
 .hero_section {
   max-width: 1536px;
-  height: 100vh;
+  height: 616px;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -171,8 +171,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding:60px 60px 0 60px;
-  
+  padding: 60px 60px 0 60px;
 }
 
 .hero_button {
@@ -191,15 +190,13 @@ header {
 .services_section,
 .contact_section {
   max-width: 100%;
-  height: 100vh;
+  height: 616px;
   margin: auto;
-  padding:60px 60px 0 60px;
+  padding: 60px 60px 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  
-  
 }
 .about_img {
   width: 200px;
@@ -246,14 +243,13 @@ header {
   height: 200px;
   padding: 1rem;
   border-radius: 10%;
-  
+
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1rem solid #c73737;
-  
 }
 .cardio {
   background-image: url("../img/cardio.jpg");
@@ -284,27 +280,25 @@ footer {
   }
 }
 @media screen and (min-width: 654px) {
-  .hero_section{
-    background-image: url('../img/bghero_medium.jpg');
+  .hero_section {
+    background-image: url("../img/bghero_medium.jpg");
   }
   .section_container {
     justify-content: space-evenly;
     flex-wrap: nowrap;
   }
-  
+
   .about_img,
-   .cardio,
+  .cardio,
   .strenght,
   .diet {
     width: 300px;
     height: 300px;
-  
-}
-
+  }
 }
 @media screen and (min-width: 1080px) {
-  .hero_section{
-    background-image: url('../img/bghero_large.jpg');
+  .hero_section {
+    background-image: url("../img/bghero_large.jpg");
   }
   .hero_button:hover {
     transform: scale(1.05);
@@ -321,19 +315,25 @@ footer {
   .hero_description {
     animation: text_animation 1.5s ease-in-out;
   }
-  
+
   .about_img,
   .cardio,
   .strenght,
   .diet {
     width: 400px;
     height: 400px;
-   } 
+  }
   .cardio:hover,
   .strenght:hover,
   .diet:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+  }
+  .about_section,
+  .services_section,
+  .contact_section,
+  .hero_section {
+    height: 100vh;
   }
 }
 
